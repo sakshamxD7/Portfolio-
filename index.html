@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Saksham Jangir — Aspiring Data Engineer & Data Analyst. Building data pipelines, uncovering insights, and crafting elegant visualisations." />
+  <meta name="keywords"    content="Data Engineer, Data Analyst, Python, SQL, Spark, Portfolio" />
+  <meta name="author"      content="Saksham Jangir" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title"       content="Saksham Jangir — Data Engineer & Analyst" />
+  <meta property="og:description" content="Aspiring Data Engineer & Data Analyst portfolio." />
+  <meta property="og:type"        content="website" />
+
+  <!-- Favicon (replace with your actual favicon files) -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <title>Saksham Jangir — Data Engineer & Analyst</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================================================
+       NAVBAR — shared across all pages
+       Active link is detected automatically by script.js
+       comparing href filenames to the current page.
+  ==================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Saksham Jangir — Home">Saksham Jangir<span>.</span></a>
+
+      <!-- Desktop + Mobile Nav Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="about.html"    class="nav-link">About</a>
+        <a href="skills.html"   class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="resume.html"   class="nav-link">Resume</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ===================================================
+       MAIN CONTENT
+  ==================================================== -->
+  <main>
+
+    <!-- ── HERO SECTION ─────────────────────────────── -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+
+      <!-- Decorative ambient blobs -->
+      <div class="hero-bg-blob blob-1" aria-hidden="true"></div>
+      <div class="hero-bg-blob blob-2" aria-hidden="true"></div>
+
+      <!-- Text Column -->
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name" id="hero-heading">Saksham Jangir</h1>
+        <h2 class="hero-role">
+          Aspiring Data Engineer <span class="amp">&amp;</span> Data Analyst
+        </h2>
+        <p class="hero-bio">
+          I turn raw data into meaningful stories. Passionate about building robust
+          data pipelines, uncovering insights, and crafting elegant visualisations
+          that drive smarter decisions.
+        </p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="assets/resume.pdf" class="btn btn-outline" download>Download Resume</a>
+        </div>
+      </div>
+
+      <!-- Avatar Column -->
+      <div class="hero-image reveal reveal-delay" aria-hidden="true">
+        <div class="avatar-ring">
+          <!-- Replace src with your own profile photo in assets/images/ -->
+          <img
+            src=""
+            alt="Profile photo of Saksham Jangir"
+            class="avatar-img"
+            width="280" height="280"
+          />
+        </div>
+        <div class="avatar-badge">📊 Data &amp; ML</div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER — shared across all pages
+  ==================================================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 Saksham Jangir. Crafted with care.</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="https://github.com/yourprofile"       target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+        <a href="mailto:alex@example.com"              aria-label="Send email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

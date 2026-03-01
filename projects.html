@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects — Saksham Jangir. Data pipelines, ML models, dashboards, and APIs." />
+  <meta name="keywords"    content="Projects, Data Pipeline, Machine Learning, Kafka, Spark, dbt, Portfolio" />
+  <meta name="author"      content="Saksham Jangir" />
+  <meta property="og:title"       content="Projects — Saksham Jangir" />
+  <meta property="og:description" content="Portfolio of data engineering and analytics projects." />
+  <meta property="og:type"        content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <title>Projects — Saksham Jangir</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ──────────────────────────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Saksham Jangir — Home">Saksham Jangir<span>.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="about.html"    class="nav-link">About</a>
+        <a href="skills.html"   class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="resume.html"   class="nav-link">Resume</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── PAGE HERO BANNER ──────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-tag">What I've Built</span>
+        <h1 class="page-hero-title" id="page-title">Featured Projects</h1>
+        <p class="page-hero-sub">
+          A selection of data engineering, analytics, and ML projects — each solving a real problem.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS GRID ─────────────────────────────────── -->
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="sr-only" id="projects-heading">Projects list</h2>
+
+        <!--
+          SVG ICONS (reused across all cards — defined once as symbols)
+          Hidden visually but referenced by <use> elements below.
+        -->
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+          <symbol id="icon-github" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </symbol>
+          <symbol id="icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </symbol>
+        </svg>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal" style="--card-accent:#a8d8b9">
+            <div class="project-accent" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-number" aria-hidden="true">01</span>
+              <h3 class="project-title">Real-Time Sales Pipeline</h3>
+              <p class="project-desc">
+                End-to-end streaming pipeline ingesting Kafka events, transforming
+                them with PySpark, and landing cleaned data in Snowflake with
+                sub-second latency. Monitored via a Grafana dashboard.
+              </p>
+              <div class="project-stack" aria-label="Technologies used">
+                <span>Kafka</span><span>PySpark</span><span>Snowflake</span><span>Airflow</span><span>Grafana</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/yourprofile/sales-pipeline" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Real-Time Sales Pipeline">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-github"/></svg>GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live demo for Real-Time Sales Pipeline">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-external"/></svg>Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" style="--card-accent:#b5c8f0">
+            <div class="project-accent" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-number" aria-hidden="true">02</span>
+              <h3 class="project-title">Customer Churn Predictor</h3>
+              <p class="project-desc">
+                ML classification model predicting telecom churn with 91% accuracy.
+                Includes automated feature engineering, SHAP explainability, and a
+                FastAPI serving endpoint deployed on AWS Lambda.
+              </p>
+              <div class="project-stack" aria-label="Technologies used">
+                <span>Python</span><span>Scikit-learn</span><span>SHAP</span><span>FastAPI</span><span>AWS Lambda</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/yourprofile/churn-predictor" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Customer Churn Predictor">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-github"/></svg>GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live demo for Customer Churn Predictor">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-external"/></svg>Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" style="--card-accent:#f5d6a8">
+            <div class="project-accent" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-number" aria-hidden="true">03</span>
+              <h3 class="project-title">COVID-19 Dashboard</h3>
+              <p class="project-desc">
+                Interactive global dashboard visualising pandemic trends using
+                Plotly Dash. Consumed WHO public APIs, with an ETL refresh every
+                6 hours via scheduled Airflow DAGs.
+              </p>
+              <div class="project-stack" aria-label="Technologies used">
+                <span>Python</span><span>Plotly Dash</span><span>Airflow</span><span>PostgreSQL</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/yourprofile/covid-dashboard" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for COVID-19 Dashboard">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-github"/></svg>GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live demo for COVID-19 Dashboard">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-external"/></svg>Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" style="--card-accent:#d4b8e0">
+            <div class="project-accent" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-number" aria-hidden="true">04</span>
+              <h3 class="project-title">dbt Analytics Warehouse</h3>
+              <p class="project-desc">
+                Modular dbt project transforming raw e-commerce events into a
+                star-schema warehouse. Includes tests, docs, CI/CD via GitHub
+                Actions, and Metabase dashboards for business stakeholders.
+              </p>
+              <div class="project-stack" aria-label="Technologies used">
+                <span>dbt</span><span>BigQuery</span><span>Metabase</span><span>GitHub Actions</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/yourprofile/dbt-warehouse" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for dbt Analytics Warehouse">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-github"/></svg>GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live demo for dbt Analytics Warehouse">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-external"/></svg>Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" style="--card-accent:#f0b8b8">
+            <div class="project-accent" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-number" aria-hidden="true">05</span>
+              <h3 class="project-title">NLP News Sentiment Tracker</h3>
+              <p class="project-desc">
+                Scrapes 500+ financial news articles daily, runs FinBERT sentiment
+                analysis, stores results in TimescaleDB and correlates sentiment
+                scores with stock price movements.
+              </p>
+              <div class="project-stack" aria-label="Technologies used">
+                <span>Python</span><span>HuggingFace</span><span>TimescaleDB</span><span>Docker</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/yourprofile/sentiment-tracker" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for NLP News Sentiment Tracker">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-github"/></svg>GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live demo for NLP News Sentiment Tracker">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-external"/></svg>Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal" style="--card-accent:#b8ddf0">
+            <div class="project-accent" aria-hidden="true"></div>
+            <div class="project-body">
+              <span class="project-number" aria-hidden="true">06</span>
+              <h3 class="project-title">Open Data API Gateway</h3>
+              <p class="project-desc">
+                FastAPI micro-service wrapping five public open-data sources into
+                one unified GraphQL endpoint with Redis caching and per-IP rate
+                limiting. Fully containerised with Docker Compose.
+              </p>
+              <div class="project-stack" aria-label="Technologies used">
+                <span>FastAPI</span><span>GraphQL</span><span>Redis</span><span>Docker</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/yourprofile/open-data-gateway" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Open Data API Gateway">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-github"/></svg>GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Live demo for Open Data API Gateway">
+                <svg width="16" height="16" aria-hidden="true"><use href="#icon-external"/></svg>Live Demo
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 Saksham Jangir. Crafted with care.</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/yourprofile"       target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="mailto:alex@example.com"              aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

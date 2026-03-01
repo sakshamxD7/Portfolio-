@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Resume — Saksham Jangir. Work experience, education, and certifications." />
+  <meta name="keywords"    content="Resume, CV, Data Engineer, Work Experience, Certifications" />
+  <meta name="author"      content="Saksham Jangir" />
+  <meta property="og:title"       content="Resume — Saksham Jangir" />
+  <meta property="og:description" content="Saksham Jangir's resume: experience, education, and certifications." />
+  <meta property="og:type"        content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <title>Resume — Saksham Jangir</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ──────────────────────────────────────────── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Saksham Jangir — Home">Alex<span>.</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html"    class="nav-link">Home</a>
+        <a href="about.html"    class="nav-link">About</a>
+        <a href="skills.html"   class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="resume.html"   class="nav-link">Resume</a>
+        <a href="contact.html"  class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── PAGE HERO BANNER ──────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-tag">My Experience</span>
+        <h1 class="page-hero-title" id="page-title">Resume</h1>
+        <p class="page-hero-sub">
+          My professional journey — experience, education, and certifications.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── DOWNLOAD BANNER ───────────────────────────────── -->
+    <section class="section" aria-label="Download resume">
+      <div class="container">
+        <div class="resume-cta-banner reveal">
+          <div class="resume-cta-text">
+            <span class="section-tag">PDF Version</span>
+            <h2 class="section-title">Download Full Resume</h2>
+            <p>
+              Get the full one-page PDF with all work experience, education,
+              certifications, and project highlights neatly formatted.
+            </p>
+          </div>
+          <a href="assets/resume.pdf" class="btn btn-primary btn-lg" download aria-label="Download resume PDF">
+            <!-- Download icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE + EDUCATION ────────────────────────── -->
+    <section class="section section-tinted" aria-labelledby="exp-heading">
+      <div class="container">
+        <div class="resume-grid">
+
+          <!-- Work Experience -->
+          <div>
+            <h2 class="resume-section-title" id="exp-heading">Work Experience</h2>
+
+            <div class="resume-entry reveal">
+              <div class="resume-entry-header">
+                <h3 class="resume-entry-title">Data Engineering Intern</h3>
+                <span class="resume-entry-date">Jun 2024 — Sep 2024</span>
+              </div>
+              <p class="resume-entry-org">DataFlow Ltd · Edinburgh, UK</p>
+              <p class="resume-entry-desc">
+                Built and maintained Apache Airflow DAGs for nightly batch pipelines.
+                Migrated 8 legacy ETL scripts to dbt models, reducing average run-time
+                by 38%. Collaborated with the analytics team to improve data quality
+                checks and lineage documentation.
+              </p>
+            </div>
+
+            <div class="resume-entry reveal">
+              <div class="resume-entry-header">
+                <h3 class="resume-entry-title">Data Analyst Intern</h3>
+                <span class="resume-entry-date">Jun 2023 — Aug 2023</span>
+              </div>
+              <p class="resume-entry-org">AnalyticsHub · Remote</p>
+              <p class="resume-entry-desc">
+                Produced weekly business-intelligence reports for 3 product teams
+                using Metabase. Wrote complex SQL queries against a Snowflake
+                warehouse and presented findings to non-technical stakeholders.
+              </p>
+            </div>
+
+            <div class="resume-entry reveal">
+              <div class="resume-entry-header">
+                <h3 class="resume-entry-title">Teaching Assistant — Databases</h3>
+                <span class="resume-entry-date">Sep 2023 — May 2024</span>
+              </div>
+              <p class="resume-entry-org">University of Edinburgh</p>
+              <p class="resume-entry-desc">
+                Assisted 60+ students in weekly lab sessions covering relational
+                database design, SQL, and NoSQL systems. Marked coursework and
+                provided written feedback.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Education -->
+          <div>
+            <h2 class="resume-section-title" id="edu-heading">Education</h2>
+
+            <div class="resume-entry reveal">
+              <div class="resume-entry-header">
+                <h3 class="resume-entry-title">B.Sc. Computer Science</h3>
+                <span class="resume-entry-date">2021 — 2025</span>
+              </div>
+              <p class="resume-entry-org">University of Edinburgh</p>
+              <p class="resume-entry-desc">
+                Expected First-Class Honours. Key modules: Distributed Systems,
+                Database Systems, Machine Learning, Cloud Computing, Data Science.
+                Dissertation: "Optimising Streaming ETL Pipelines with Adaptive
+                Partitioning."
+              </p>
+            </div>
+
+            <div class="resume-entry reveal">
+              <div class="resume-entry-header">
+                <h3 class="resume-entry-title">Scottish Highers</h3>
+                <span class="resume-entry-date">2018 — 2021</span>
+              </div>
+              <p class="resume-entry-org">Heriot's School, Edinburgh</p>
+              <p class="resume-entry-desc">
+                Mathematics (A), Computing Science (A), Physics (A), English (B),
+                Chemistry (B).
+              </p>
+            </div>
+
+          </div>
+
+        </div><!-- /resume-grid -->
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ────────────────────────────────── -->
+    <section class="section" aria-labelledby="cert-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title" id="cert-heading">Certifications</h2>
+        </div>
+
+        <div class="cert-grid">
+
+          <div class="cert-card reveal">
+            <span class="cert-icon" aria-hidden="true">☁️</span>
+            <div>
+              <p class="cert-name">AWS Certified Cloud Practitioner</p>
+              <p class="cert-issuer">Amazon Web Services · 2024</p>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <span class="cert-icon" aria-hidden="true">📊</span>
+            <div>
+              <p class="cert-name">Google Data Analytics Certificate</p>
+              <p class="cert-issuer">Google · Coursera · 2023</p>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <span class="cert-icon" aria-hidden="true">❄️</span>
+            <div>
+              <p class="cert-name">Snowflake SnowPro Core</p>
+              <p class="cert-issuer">Snowflake · 2024</p>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <span class="cert-icon" aria-hidden="true">🔧</span>
+            <div>
+              <p class="cert-name">dbt Fundamentals</p>
+              <p class="cert-issuer">dbt Labs · 2024</p>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <span class="cert-icon" aria-hidden="true">🤖</span>
+            <div>
+              <p class="cert-name">Machine Learning Specialisation</p>
+              <p class="cert-issuer">DeepLearning.AI · Coursera · 2023</p>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <span class="cert-icon" aria-hidden="true">🐍</span>
+            <div>
+              <p class="cert-name">Python for Data Science</p>
+              <p class="cert-issuer">IBM · Coursera · 2022</p>
+            </div>
+          </div>
+
+        </div><!-- /cert-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 Saksham Jangir. Crafted with care.</p>
+      <div class="footer-socials">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/yourprofile"       target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="mailto:alex@example.com"              aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
